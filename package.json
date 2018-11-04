@@ -1,0 +1,20 @@
+{
+  "name": "node-server-clustering",
+  "version": "0.0.1",
+  "description": "A simple Koa clustering example",
+  "main": "./src/app.js",
+  "author": "Michele Riva <master@micheleriva.it>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "forever ./src/cluster.js"
+  },
+  "dependencies": {
+    "jimp": "^0.5.6",
+    "koa": "^2.6.1",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "forever": "^0.15.3"
+  }
+}
