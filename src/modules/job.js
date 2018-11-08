@@ -1,7 +1,7 @@
 const fs   = require('fs')
 const jimp = require('jimp')
 
-module.exports = async function runJob() {
+module.exports = function runJob() {
 
   return new Promise(async (resolve, reject) => {
 
