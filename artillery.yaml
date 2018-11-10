@@ -1,9 +1,0 @@
-config:
-  target: 'http://localhost:3000'
-  phases:
-    - duration: 30
-      arrivalRate: 20
-scenarios:
-  - flow:
-    - post:
-        url: "/flip"
