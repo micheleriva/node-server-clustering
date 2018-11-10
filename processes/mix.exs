@@ -19,7 +19,7 @@ defmodule Processes.MixProject do
 
   defp deps do
     [
-      
+      {:httpoison, "~> 1.4"}
     ]
   end
 end
