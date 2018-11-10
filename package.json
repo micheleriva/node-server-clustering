@@ -7,7 +7,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "forever ./src/cluster.js"
+    "start-cluster": "forever ./src/cluster.js",
+    "start-standard": "forever ./src/standard.js"
   },
   "dependencies": {
     "jimp": "^0.5.6",

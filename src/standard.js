@@ -1,6 +1,7 @@
 const Koa    = require('koa')
 const Router = require('koa-router')
 const runJob = require('./modules/job')
+const log    = require('./modules/log')
 const router = new Router()
 const app    = new Koa()
 
