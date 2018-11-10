@@ -10,16 +10,13 @@ module.exports = function runJob() {
     const destFileName = `${__dirname}/../imgs/dest/${randomNumber()}-img.jpg`
 
     log(`Copying ${destFileName}`)
-
     fs.copyFileSync(`${__dirname}/../imgs/landscape.jpg`, destFileName)
 
     log(`Flipping ${destFileName}`)
-
     const image = await jimp.read(destFileName)
     image.flip(true, false)
 
     log(`Deleting ${destFileName}`)
-
     fs.unlink(destFileName, (err) => {
       return err ? reject(err) : resolve('success')
     })
